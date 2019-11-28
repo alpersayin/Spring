@@ -1,0 +1,13 @@
+{
+  "id" : 10,
+  "departmentName" : "Accounting",
+  "managerName" : "Alper Ersayın",
+  "active" : true,
+  "contactAddress" : {
+    "street" : "Bilkent Bulvarı",
+    "city" : "Ankara",
+    "zip" : "06500",
+    "country" : "TR"
+  },
+  "locations" : [ "ANKARA", "İSTANBUL", "İZMİR" ]
+}
