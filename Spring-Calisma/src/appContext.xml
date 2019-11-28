@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<!--  
+	<bean id="empSetter" class="com.alpersayin.Employee">
+		<property name="firstname" value="Caner"/>
+		<property name="lastname" value="Ozkan"/>
+		<property name="salary" value="7000"/>
+	</bean>
+	
+	<bean id="empConstruct" class="com.alpersayin.Employee">
+		<constructor-arg value="alper"/>
+		<constructor-arg value="ersayın"/>
+		<constructor-arg value="5555"/>
+	</bean>
+	-->
+	<context:property-placeholder location="classpath:departments.properties"/>
+			
+	<bean id="emp1" class="com.alpersayin.Employee">
+		<property name="firstname" value="Caner"/>
+		<property name="lastname" value="Ozkan"/>
+		<property name="salary" value="7000"/>
+		<property name="dep" ref="d1"/>
+	</bean>			
+	
+	<bean id="d1" class="com.alpersayin.Department">
+		<property name="name" value="${dep1.name}"/>
+		<property name="location" value="${dep1.location}"/>
+	</bean>
+	
+	<bean id="emp2" class="com.alpersayin.Employee">
+		<constructor-arg value="Alper"/>
+		<constructor-arg value="Ersayın"/>
+		<constructor-arg value="5555"/>
+		<constructor-arg ref="d2"/>
+	</bean>
+	
+	<bean id="d2" class="com.alpersayin.Department">
+		<constructor-arg value="${dep2.name}"/>
+		<constructor-arg value="${dep2.location}"/>
+	</bean>
+	
+</beans>
+
+
+
+
+
