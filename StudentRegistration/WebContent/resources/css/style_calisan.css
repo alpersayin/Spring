@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+html, body {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 0px;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+	border-bottom: 1px solid gray;
+	font-family: Tahoma, Verdana, sans-serif;
+	width: 90%;
+}
+
+th {
+	border-bottom: 1px solid gray;
+	background: none repeat scroll 0 0 #427682;
+	padding: 10px;
+	color: #ffffff;
+}
+
+tr {
+	border-top: 1px solid gray;
+	text-align: center;
+}
+
+tr:nth-child(even) {background: #ffffff}
+tr:nth-child(odd) {background: #bbbbbb}
