@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springframework.version>5.2.1.RELEASE</springframework.version> <!-- Version name'i spring security ile çakışmasın diye ${} şeklinde belirtiyoru< -->
+		<springframework.version>5.2.4.RELEASE</springframework.version> <!-- Version name'i spring security ile çakışmasın diye ${} şeklinde belirtiyoru< -->
 		<springsecurity.version>5.2.10.RELEASE</springsecurity.version> <!-- Version name'i spring security ile çakışmasın diye ${} şeklinde belirtiyoru< -->
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
